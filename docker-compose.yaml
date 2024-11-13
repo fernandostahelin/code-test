@@ -1,0 +1,46 @@
+services:
+  db-analytics:
+    image: postgres
+    container_name: ${POSTGRES_ANALYTICS_CONTAINER}
+    shm_size: 128mb
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${POSTGRES_USER_ANALYTICS} -d ${POSTGRES_DB_ANALYTICS}",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB_ANALYTICS}
+      POSTGRES_USER: ${POSTGRES_USER_ANALYTICS}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD_ANALYTICS}
+    volumes:
+      - ./db_analytics_data:/var/lib/postgresql/dat
+    ports:
+      - 5433:5432
+
+  db-source:
+    image: postgres
+    container_name: ${POSTGRES_SOURCE_CONTAINER}
+    shm_size: 128mb
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${POSTGRES_USER_SOURCE} -d ${POSTGRES_DB_SOURCE}",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      POSTGRES_DB: northwind
+      POSTGRES_USER: fernando
+      POSTGRES_PASSWORD: 1234567890
+    volumes:
+      - ./dbdata:/var/lib/postgresql/data
+      - ./sql:/sql
+      - ./data_dump/northwind_source.sql:/docker-entrypoint-initdb.d/northwind_source.sql
+    ports:
+      - 5434:5432

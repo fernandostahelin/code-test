@@ -1,0 +1,6 @@
+.env
+notes.txt
+.DS_Store
+.venv/
+dbdata
+db_analytics_data
