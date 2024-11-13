@@ -42,5 +42,6 @@ services:
       - ./dbdata:/var/lib/postgresql/data
       - ./sql:/sql
       - ./data_dump/northwind_source.sql:/docker-entrypoint-initdb.d/northwind_source.sql
+      - ./data_dump/create_table_long_process_data.sql:/docker-entrypoint-initdb.d/create_table_long_process_data.sql
     ports:
       - 5434:5432
