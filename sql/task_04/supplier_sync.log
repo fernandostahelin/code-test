@@ -1,0 +1,73 @@
+2024-11-14 20:06:31,360 - __main__ - INFO - main:223 - === Starting Supplier Dimension Sync Process ===
+2024-11-14 20:06:31,360 - __main__ - INFO - main:227 - Establishing database connections
+2024-11-14 20:06:31,414 - __main__ - INFO - get_db_connection:69 - Successfully connected to database: source_db
+2024-11-14 20:06:31,423 - __main__ - INFO - get_db_connection:69 - Successfully connected to database: target_db
+2024-11-14 20:06:31,425 - __main__ - INFO - sync_supplier_dimension:135 - Starting supplier dimension sync process
+2024-11-14 20:06:31,425 - __main__ - DEBUG - sync_supplier_dimension:138 - Fetching suppliers from source database
+2024-11-14 20:06:31,429 - __main__ - INFO - sync_supplier_dimension:140 - Found 29 suppliers in source database
+2024-11-14 20:06:31,429 - __main__ - DEBUG - sync_supplier_dimension:142 - Fetching current supplier records from target database
+2024-11-14 20:06:31,431 - __main__ - INFO - sync_supplier_dimension:144 - Found 29 current supplier records in target database
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 1
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 1
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 2
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 2
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 3
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 3
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 4
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 4
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 5
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 5
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 6
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 6
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 7
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 7
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 8
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 8
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 9
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 9
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 10
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 10
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 11
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 11
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 12
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 12
+2024-11-14 20:06:31,431 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 13
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 13
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 14
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 14
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 15
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 15
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 16
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 16
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 17
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 17
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 18
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 18
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 19
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 19
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 20
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 20
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 21
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 21
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 22
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 22
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 23
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 23
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 24
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 24
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 25
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 25
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 26
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 26
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 27
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 27
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 28
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 28
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:157 - Processing supplier_id: 29
+2024-11-14 20:06:31,432 - __main__ - DEBUG - sync_supplier_dimension:202 - No changes detected for supplier_id: 29
+2024-11-14 20:06:31,433 - __main__ - INFO - sync_supplier_dimension:206 - Supplier dimension sync completed successfully
+2024-11-14 20:06:31,433 - __main__ - INFO - sync_supplier_dimension:207 - Summary: 0 new suppliers, 0 updates, 29 unchanged
+2024-11-14 20:06:31,433 - __main__ - INFO - main:235 - === Process completed successfully in 0:00:00.072352 ===
+2024-11-14 20:06:31,433 - __main__ - INFO - main:245 - Closing database connections
+2024-11-14 20:06:31,433 - __main__ - DEBUG - main:249 - Database connection closed
+2024-11-14 20:06:31,433 - __main__ - DEBUG - main:249 - Database connection closed

@@ -1,8 +1,9 @@
+import logging
 import os
+import sys
+
 import psycopg2
 from dotenv import load_dotenv
-import logging
-import sys
 
 
 def setup_logging():

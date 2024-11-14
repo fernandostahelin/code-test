@@ -39,3 +39,9 @@ It will create the tables in the target and run the python script using uv, the 
 Keep in mind the .sh file is idempotent. It drops the existing tables in the target, creates new ones and runs the python script.
 
 If you want to check the incremental behavior, just remove the `DROP TABLE IF EXISTS` lines in the .sql files.
+
+# Task 03
+I created the schema as code using https://dbdiagram.io/home/ and then export as a .sql DDL file.
+
+# Task 04
+The same as the before, run the .sh file that does everything.
