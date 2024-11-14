@@ -3,4 +3,4 @@
 source ../../.env
 
 
-docker exec -it ${POSTGRES_ANALYTICS_CONTAINER} psql -d target_db -U db_analytics -f /sql/task_03/task_03_schema_ddl.sql
+docker exec -it ${POSTGRES_ANALYTICS_CONTAINER} psql -d ${POSTGRES_DB_ANALYTICS} -U ${POSTGRES_USER_ANALYTICS} -f /sql/task_03/task_03_schema_ddl.sql

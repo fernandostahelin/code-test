@@ -25,3 +25,13 @@ logs-source:
 logs-analytics:
 	docker container logs ${POSTGRES_ANALYTICS_CONTAINER};
 
+.PHONY: all
+all:
+	uv run isort .; \
+	uv run ruff check .; \
+	uv run ruff format .; \
+	uv run sqlfluff lint . --dialect postgres; \
+	uv run sqlfluff fix . --dialect postgres; \
+	uv run sqlfluff format . --dialect postgres; \
+
+

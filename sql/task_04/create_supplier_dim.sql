@@ -1,22 +1,22 @@
 CREATE TABLE IF NOT EXISTS supplier_dimension (
     supplier_key SERIAL PRIMARY KEY,  -- Surrogate key
-    supplier_id smallint NOT NULL,    -- Natural/business key
-    company_name varchar(40) NOT NULL,
-    contact_name varchar(30),
-    contact_title varchar(30),
-    address varchar(60),
-    city varchar(15),
-    region varchar(15),
-    postal_code varchar(10),
-    country varchar(15),
-    phone varchar(24),
-    fax varchar(24),
-    homepage text,
-    effective_date timestamp NOT NULL,
-    end_date timestamp,
-    is_current boolean NOT NULL,
-    created_by varchar(50) NOT NULL,
-    created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    modified_by varchar(50) NOT NULL,
-    modified_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+    supplier_id SMALLINT NOT NULL,    -- Natural/business key
+    company_name VARCHAR(40) NOT NULL,
+    contact_name VARCHAR(30),
+    contact_title VARCHAR(30),
+    address VARCHAR(60),
+    city VARCHAR(15),
+    region VARCHAR(15),
+    postal_code VARCHAR(10),
+    country VARCHAR(15),
+    phone VARCHAR(24),
+    fax VARCHAR(24),
+    homepage TEXT,
+    effective_date TIMESTAMP NOT NULL,
+    end_date TIMESTAMP,
+    is_current BOOLEAN NOT NULL,
+    created_by VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    modified_by VARCHAR(50) NOT NULL,
+    modified_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );

@@ -1,4 +1,3 @@
-
 DROP TABLE IF EXISTS target_products;
 -- Target products table with tracking columns
 CREATE TABLE IF NOT EXISTS target_products (
@@ -14,7 +13,7 @@ CREATE TABLE IF NOT EXISTS target_products (
     unit_price DECIMAL(10, 2),           -- Monitored for changes
     units_in_stock INTEGER,             -- Monitored for changes
     units_in_order INTEGER,
-    discontinued integer,                -- Monitored for changes
+    discontinued INTEGER,                -- Monitored for changes
 
     -- Audit columns
     created_by VARCHAR(100) NOT NULL,

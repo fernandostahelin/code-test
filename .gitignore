@@ -10,3 +10,4 @@ venv/
 /.venv
 .ruff_cache/
 .log
+*.log
