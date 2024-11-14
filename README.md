@@ -6,13 +6,16 @@ I could've utilized Airflow to do so, but I opted for this simpler approach.
 Docker was used to containerize the database instances. You can replicate the environment by running `make up`. or `docker compose up -d`.
 Keep in mind that you'll need to define the environment variables in a `.env` file.
 
-# Running the procedures
+# Task 01
+## Running the procedures
 Run the .sh files inside each task folder.
 The first run will make the procedure appear in the postgres.
 
 I called the procedure using PGAdmin.
+`call northwind.public.process_data(5);`
+The argument defines in which step the procedure will fail.
 
-## View logs
+### View logs
 Using dbeaver
 
 ````

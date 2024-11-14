@@ -4,3 +4,7 @@ notes.txt
 .venv/
 dbdata
 db_analytics_data
+.venv
+/.venv
+venv/
+/.venv

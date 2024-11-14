@@ -16,6 +16,35 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 
+
+
+
+
+
+
+
+CREATE OR REPLACE FUNCTION northwind.public.log_process_error(
+    p_execution_num INTEGER,
+    p_step_num INTEGER,
+    p_error_message TEXT
+) RETURNS void AS $$
+DECLARE
+    -- Local variables to store the parameters
+    v_exec_num INTEGER := p_execution_num;
+    v_step_num INTEGER := p_step_num;
+    v_error_msg TEXT := p_error_message;
+BEGIN
+        RAISE NOTICE 'Begin logging error func.';
+                UPDATE northwind.public.process_execution_log 
+                    SET "status" = 'FAILED',
+                        "end_time" = CURRENT_TIMESTAMP,
+                        "error_message" = p_error_message
+                    WHERE execution_num = p_execution_num 
+                    AND step_num = p_step_num;
+        RAISE NOTICE 'Logged error sucessfully in step %.', v_step_num;
+
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
 ---
 --- drop tables
 ---
