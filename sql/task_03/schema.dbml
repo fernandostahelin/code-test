@@ -1,0 +1,65 @@
+// Fact Table
+Table fact_orders {
+  order_detail_id int [PK]
+  order_id int
+  product_key int [ref: > dim_products.product_key]
+  customer_key int [ref: > dim_customers.customer_key]
+  date_key int [ref: > dim_date.date_key]
+  geography_key int [ref: > dim_geography.geography_key]
+  quantity int
+  unit_price decimal
+  discount decimal
+  sales_amount decimal
+  order_status varchar
+}
+
+// Dimension Tables
+Table dim_date {  
+  date_key int [PK]
+  full_date date
+  year int
+  quarter int
+  month int
+  month_name varchar
+  week int
+  day_of_week int
+  day_name varchar
+  fiscal_year int
+  fiscal_quarter int
+}
+
+Table dim_customers {
+  customer_key int [PK]
+  customer_id varchar
+  company_name varchar
+  contact_name varchar
+  contact_title varchar
+  customer_type_id varchar [ref: > dim_customer_type.customer_type_id]
+  phone varchar
+  email varchar
+}
+
+Table dim_customer_type {
+  customer_type_id varchar [PK]
+  customer_type_description varchar
+}
+
+Table dim_products {
+  product_key int [PK]
+  product_id int
+  product_name varchar
+  category_id int
+  category_name varchar
+  supplier_id int
+  supplier_name varchar
+  unit_price decimal
+  discontinued boolean
+}
+
+Table dim_geography {
+  geography_key int [PK]
+  city varchar
+  region varchar
+  country varchar
+  postal_code varchar
+}
