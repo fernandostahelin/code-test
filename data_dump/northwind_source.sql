@@ -37,6 +37,16 @@ DROP TABLE IF EXISTS region;
 DROP TABLE IF EXISTS employees;
 
 DROP TABLE IF EXISTS long_process_data;
+DROP TABLE IF EXISTS process_execution_log;
+
+CREATE TABLE process_execution_log (
+    execution_num INTEGER,
+    step_num INTEGER,
+    start_time TIMESTAMP,
+    end_time TIMESTAMP,
+    status TEXT,
+    error_message TEXT
+);
 
 CREATE TABLE long_process_data(
     seq_num SERIAL PRIMARY KEY,

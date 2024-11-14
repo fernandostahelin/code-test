@@ -1,4 +1,6 @@
-#bin/bash
+#!/bin/bash
 
-docker exec -it ${POSTGRES_SOURCE_CONTAINER} psql -d northwind -U fernando -f create_table_long_process_data.sql
-docker exec -it ${POSTGRES_SOURCE_CONTAINER} psql -d northwind -U fernando -f procedure_01.sql
+source ../../.env
+
+
+docker exec -it ${POSTGRES_SOURCE_CONTAINER} psql -d northwind -U fernando -f /sql/task_01/procedure_01.sql
