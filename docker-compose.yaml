@@ -16,10 +16,12 @@ services:
       POSTGRES_DB: ${POSTGRES_DB_ANALYTICS}
       POSTGRES_USER: ${POSTGRES_USER_ANALYTICS}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD_ANALYTICS}
+      PORT_ANALYTICS: ${POSTGRES_ANALYTICS_PORT}
     volumes:
       - ./db_analytics_data:/var/lib/postgresql/dat
+      - ./sql:/sql
     ports:
-      - 5433:5432
+      - ${POSTGRES_ANALYTICS_PORT}:5432
 
   db-source:
     image: postgres
@@ -35,15 +37,16 @@ services:
       timeout: 5s
       retries: 5
     environment:
-      POSTGRES_DB: northwind
-      POSTGRES_USER: fernando
-      POSTGRES_PASSWORD: 1234567890
+      POSTGRES_DB: ${POSTGRES_DB_SOURCE}
+      POSTGRES_USER: ${POSTGRES_USER_SOURCE}
+      POSTGRES_PASSWORD: ${POSTGRES_PASS_SOURCE}
+      PORT_SOURCE: ${POSTGRES_SOURCE_PORT}
     volumes:
       - ./dbdata:/var/lib/postgresql/data
       - ./sql:/sql
       - ./data_dump/northwind_source.sql:/docker-entrypoint-initdb.d/northwind_source.sql
     ports:
-      - 5434:5432
+      - ${POSTGRES_SOURCE_PORT}:5432
 
   pg-admin:
     image: dpage/pgadmin4

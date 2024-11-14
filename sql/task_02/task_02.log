@@ -1,0 +1,27 @@
+2024-11-14 19:08:41,744 - __main__ - INFO - Successfully connected to database: source_db
+2024-11-14 19:08:41,752 - __main__ - INFO - Successfully connected to database: target_db
+2024-11-14 19:08:41,752 - __main__ - INFO - Starting data sync process
+2024-11-14 19:08:41,755 - __main__ - DEBUG - Found 77 products in source database
+2024-11-14 19:08:41,759 - __main__ - INFO - Cleared target_products table
+2024-11-14 19:08:41,790 - __main__ - INFO - Products sync completed. 77 products synced
+2024-11-14 19:08:41,793 - __main__ - DEBUG - Inserted employee 1 (first pass)
+2024-11-14 19:08:41,793 - __main__ - DEBUG - Inserted employee 2 (first pass)
+2024-11-14 19:08:41,793 - __main__ - DEBUG - Inserted employee 3 (first pass)
+2024-11-14 19:08:41,794 - __main__ - DEBUG - Inserted employee 4 (first pass)
+2024-11-14 19:08:41,794 - __main__ - DEBUG - Inserted employee 5 (first pass)
+2024-11-14 19:08:41,795 - __main__ - DEBUG - Inserted employee 6 (first pass)
+2024-11-14 19:08:41,795 - __main__ - DEBUG - Inserted employee 7 (first pass)
+2024-11-14 19:08:41,796 - __main__ - DEBUG - Inserted employee 8 (first pass)
+2024-11-14 19:08:41,796 - __main__ - DEBUG - Inserted employee 9 (first pass)
+2024-11-14 19:08:41,797 - __main__ - DEBUG - Updated reports_to for employee 1
+2024-11-14 19:08:41,797 - __main__ - DEBUG - Updated reports_to for employee 3
+2024-11-14 19:08:41,798 - __main__ - DEBUG - Updated reports_to for employee 4
+2024-11-14 19:08:41,798 - __main__ - DEBUG - Updated reports_to for employee 5
+2024-11-14 19:08:41,799 - __main__ - DEBUG - Updated reports_to for employee 6
+2024-11-14 19:08:41,799 - __main__ - DEBUG - Updated reports_to for employee 7
+2024-11-14 19:08:41,800 - __main__ - DEBUG - Updated reports_to for employee 8
+2024-11-14 19:08:41,800 - __main__ - DEBUG - Updated reports_to for employee 9
+2024-11-14 19:08:41,801 - __main__ - INFO - Employees sync completed. 9 employees processed
+2024-11-14 19:08:41,801 - __main__ - INFO - Data sync process completed successfully
+2024-11-14 19:08:41,801 - __main__ - DEBUG - Database connection closed
+2024-11-14 19:08:41,801 - __main__ - DEBUG - Database connection closed

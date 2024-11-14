@@ -8,3 +8,5 @@ db_analytics_data
 /.venv
 venv/
 /.venv
+.ruff_cache/
+.log

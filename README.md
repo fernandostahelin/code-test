@@ -15,6 +15,9 @@ I called the procedure using PGAdmin.
 `call northwind.public.process_data(5);`
 The argument defines in which step the procedure will fail.
 
+You can query the tables below to see the results after the procedure has run, or while it is running.
+Also, I am printing some of the logs to the console.
+
 ### View logs
 Using dbeaver
 
@@ -28,5 +31,7 @@ select * from northwind.public.long_process_data;
 
 select * from northwind.public.process_execution_log;
 `````
+# Task 02
+Run the task_02.sh file in sql/task_02.
 
-
+It will create the tables in the target and run the python script using uv, the package manager I choosed for this project.
