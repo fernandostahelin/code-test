@@ -35,3 +35,7 @@ select * from northwind.public.process_execution_log;
 Run the task_02.sh file in sql/task_02.
 
 It will create the tables in the target and run the python script using uv, the package manager I choosed for this project.
+
+Keep in mind the .sh file is idempotent. It drops the existing tables in the target, creates new ones and runs the python script.
+
+If you want to check the incremental behavior, just remove the `DROP TABLE IF EXISTS` lines in the .sql files.
