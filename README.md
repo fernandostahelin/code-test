@@ -45,3 +45,8 @@ I created the schema as code using https://dbdiagram.io/home/ and then export as
 
 # Task 04
 The same as the before, run the .sh file that does everything.
+
+# Task 05
+Run the .sh file that does everything.
+
+
