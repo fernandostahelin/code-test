@@ -10,7 +10,7 @@ Keep in mind that you'll need to define the environment variables in a `.env` fi
 Run the .sh files inside each task folder.
 The first run will make the procedure appear in the postgres.
 
-I did run the procedure in the DBeaver UI using `call process_data();`
+I called the procedure using PGAdmin.
 
 ## View logs
 Using dbeaver
